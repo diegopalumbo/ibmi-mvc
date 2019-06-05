@@ -1,0 +1,27 @@
+     A          R VIEW                      CA03(03) CA05(05)
+     A                                      SETOF(01)
+     A                                      SETOF(02)
+     A                                      PUTOVR
+     A                                  5  5'Cliente ID'
+     A            V1CLIE         9N 0I  5 17
+     A  01                                  DSPATR(HI PC)
+     A                                      OVRATR
+     A                                  8  5'Prezzo    '
+     A            V1NOME        35   O  5 28OVRATR
+     A                                      OVRDTA
+     A            MSG           70   O 22  5
+     A  01                                  DSPATR(HI RI)
+     A                                      OVRATR
+     A                                      OVRDTA
+     A                                 23  5'F3=Exit  F5=Refresh'
+     A                                      COLOR(BLU)
+     A                                  1 32'Ordini '
+     A            V1DESC        35      6 28OVRATR
+     A                                      OVRDTA
+     A            V1PROD         9N 0I  6 17
+     A  02                                  DSPATR(HI PC)
+     A                                      OVRATR
+     A                                  6  5'Prodotto ID'
+     A            V1PREZZO      15Y 3O  8 17EDTCDE(1)
+     A                                      OVRATR
+     A                                      OVRDTA
