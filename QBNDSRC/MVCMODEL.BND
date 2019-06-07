@@ -1,0 +1,3 @@
+             STRPGMEXP  SIGNATURE('0000000000000001')
+                EXPORT     SYMBOL(mvcModel_Clienti_Read)
+             ENDPGMEXP
