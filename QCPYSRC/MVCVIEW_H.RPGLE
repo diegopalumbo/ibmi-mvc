@@ -8,14 +8,20 @@
 
       /If Defined(mvc_clienti)
 
-       dcl-ds MVCView_dSMvcClieF1_VIEW extname('MVCCLIEF1':'VIEW':*ALL)
+       dcl-ds mvcClieV1_DSVIEW extname('MVCCLIEF1':'VIEW':*ALL)
                                      qualified;
        END-DS;
 
-       dcl-pr MVCView_MVCCLIEF1_VIEW;
-         v1DsCliente  likeds(MVCView_dSMvcClieF1_VIEW);
+       dcl-pr mvcClieV1_View_Emit;
+         v1DsCliente  likeds(mvcClieV1_DSVIEW);
          v1FuncKey char(1);
          v1Message like(MvcView_Message);
        END-PR;
+
+       dcl-pr mvcClieV1_View_Validate;
+           v1DsCliente  likeds(mvcClieV1_DSVIEW) ;
+           v1Error like(MvcView_Error);
+           v1Message like(MvcView_Message);
+       end-pr;
 
       /Endif
