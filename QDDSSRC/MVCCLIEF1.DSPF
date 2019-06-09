@@ -1,0 +1,15 @@
+     A          R VIEW                      CA03(03) CA05(05)
+     A                                  5  5'Cliente ID'
+     A            ID             9N 0I  5 17
+     A  01                                  DSPATR(HI PC)
+     A                                  7  5'Nome      '
+     A            NOME          35   O  7 17
+     A            MSG           70   O 22  5
+     A  01                                  DSPATR(HI RI)
+     A                                 23  5'F3=Exit  F5=Refresh'
+     A                                      COLOR(BLU)
+     A                                  1 28'interrogazione clienti'
+     A            COGNOME       35      9 17
+     A                                  9  5'Cognome'
+     A            TELEFONO      16     11 17
+     A                                 11  5'Telefono'

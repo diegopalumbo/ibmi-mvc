@@ -4,7 +4,7 @@
 
        /If Defined(mvc_clienti)
 
-        dcl-ds MVCModel_DsClienti extname('CLIENTI') qualified ALIAS inz;
+        dcl-ds MVCModel_DsClienti extname('CLIENTI') qualified ALIAS;
         end-ds;
 
         dcl-pr mvcModel_Clienti_Read;
