@@ -3,7 +3,6 @@
       // CTL-OPT DftActGrp(*No) ACTGRP('QILE');
        CTL-OPT BndDir('MVCDIRE');
 
-
        // includo le definizioni necessarie al pgm
        /define mvc_clienti
        /copy qcpysrc,MVCModel_h
@@ -42,7 +41,7 @@
                   this_Message
                );
 
-               if ( this_Message = *blanks ) ;
+               if ( this_Error = *blanks ) ;
                  // controllo esistenza cliente
                  mvcModel_Clienti_Read(
                       this_DSView.ID:
@@ -54,6 +53,7 @@
                  if this_ErrorCode <> *blanks ;
                     this_Message = this_ErrorMessage;
                  else;
+                   // potrei aggiungere anche altre validazioni o operazioni qui!
                     this_DSView.nome = this_Dsclienti.NOME;
                     this_DSView.cognome = this_DsClienti.COGNOME;
                     this_DSView.telefono = this_DsClienti.TELEFONO;
